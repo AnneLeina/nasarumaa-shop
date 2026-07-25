@@ -14,6 +14,8 @@ export default function OrderConfirmation() {
   useEffect(() => {
     if (orderNumber) {
       fetchOrder();
+    } else {
+      setLoading(false);
     }
   }, [orderNumber]);
 
@@ -68,7 +70,7 @@ export default function OrderConfirmation() {
           <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '24px', paddingBottom: '24px', borderBottom: '1px solid #333333'}}>
             <div>
               <p style={{color: '#999999', fontSize: '14px', marginBottom: '4px'}}>Order Number</p>
-              <p style={{fontSize: '20px', fontWeight: 'bold', color: 'white'}}>{orderNumber}</p>
+              <p style={{fontSize: '20px', fontWeight: 'bold', color: 'white'}}>{orderNumber || 'N/A'}</p>
             </div>
             <div>
               <p style={{color: '#999999', fontSize: '14px', marginBottom: '4px'}}>Order Status</p>
@@ -93,7 +95,7 @@ export default function OrderConfirmation() {
               <div>
                 <p style={{color: '#999999', fontSize: '14px', marginBottom: '8px'}}>Delivery Instructions</p>
                 <p style={{fontSize: '14px', color: '#cccccc', lineHeight: '1.6'}}>
-                  A confirmation SMS will be sent to your phone. Our team will contact you before delivery to confirm the time. Make sure to keep your phone available.
+                  A confirmation message will be sent to your phone. Our team will contact you before delivery to confirm the time. Make sure to keep your phone available.
                 </p>
               </div>
             </>
@@ -111,7 +113,7 @@ export default function OrderConfirmation() {
         }}>
           <h3 style={{fontSize: '18px', fontWeight: '900', marginBottom: '16px', color: '#dc2626'}}>What Happens Next?</h3>
           <ol style={{color: '#cccccc', lineHeight: '1.8', paddingLeft: '20px', margin: 0}}>
-            <li style={{marginBottom: '8px'}}>Order confirmation SMS will be sent</li>
+            <li style={{marginBottom: '8px'}}>Order confirmation message will be sent</li>
             <li style={{marginBottom: '8px'}}>Our team will verify your order within 24 hours</li>
             <li style={{marginBottom: '8px'}}>You will receive a delivery appointment call</li>
             <li>Items will be delivered to your address</li>
