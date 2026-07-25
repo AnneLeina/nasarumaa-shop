@@ -1,15 +1,15 @@
 import { Trash2, ChevronLeft, ShoppingBag } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { useCartStore } from '../stores/Cartstore';
+import { useCartstore } from '../stores/Cartstore';
 
 const DELIVERY_FEE = 200;
 
 export default function Cart() {
   const navigate = useNavigate();
-  const items = useCartStore((state) => state.items);
-  const updateQuantity = useCartStore((state) => state.updateQuantity);
-  const removeFromCart = useCartStore((state) => state.removeFromCart);
-  const clearCart = useCartStore((state) => state.clearCart);
+  const items = useCartstore((state) => state.items);
+  const updateQuantity = useCartstore((state) => state.updateQuantity);
+  const removeFromCart = useCartstore((state) => state.removeFromCart);
+  const clearCart = useCartstore((state) => state.clearCart);
 
   const subtotal = items.reduce((sum, item) => sum + (item.discount_price || item.price) * item.quantity, 0);
   const total = subtotal + DELIVERY_FEE;
