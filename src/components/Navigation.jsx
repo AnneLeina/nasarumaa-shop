@@ -1,7 +1,7 @@
 import { ShoppingCart, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCartStore } from '../stores/cartStore';
+import { useCartStore } from '../stores/Cartstore';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

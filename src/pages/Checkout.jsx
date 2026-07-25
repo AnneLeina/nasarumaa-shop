@@ -1,7 +1,7 @@
 import { ChevronLeft } from 'lucide-react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useCartStore } from '../stores/cartStore';
+import { useCartstore } from '../stores/Cartstore';
 import axios from 'axios';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
@@ -9,8 +9,8 @@ const DELIVERY_FEE = 200;
 
 export default function Checkout() {
   const navigate = useNavigate();
-  const items = useCartStore((state) => state.items);
-  const clearCart = useCartStore((state) => state.clearCart);
+  const items = useCartstore((state) => state.items);
+  const clearCart = useCartstore((state) => state.clearCart);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',

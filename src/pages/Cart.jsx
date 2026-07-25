@@ -1,6 +1,6 @@
 import { Trash2, ChevronLeft, ShoppingBag } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { useCartStore } from '../stores/cartStore';
+import { useCartStore } from '../stores/Cartstore';
 
 const DELIVERY_FEE = 200;
 
