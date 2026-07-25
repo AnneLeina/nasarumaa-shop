@@ -6,7 +6,7 @@ import { useCartstore } from '../stores/Cartstore';
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-  const cartItems = useCartStore((state) => state.items);
+  const cartItems = useCartstore((state) => state.items);
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
     return (
