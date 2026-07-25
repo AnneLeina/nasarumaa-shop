@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ShoppingCart, Heart } from 'lucide-react';
 import axios from 'axios';
-import { useCartStore } from '../stores/Cartstore';
+import { useCartstore } from '../stores/Cartstore';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
@@ -13,7 +13,7 @@ export default function Products() {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('newest');
   const [loading, setLoading] = useState(true);
-  const addToCart = useCartStore((state) => state.addToCart);
+  const addToCart = useCartstore((state) => state.addToCart);
 
   useEffect(() => {
     fetchData();
