@@ -113,7 +113,7 @@ export default function Checkout() {
             <div style={{backgroundColor: '#ffffff', border: '2px solid #000000', borderRadius: '12px', padding: '32px', marginBottom: '32px'}}>
               <h2 style={{fontSize: '24px', fontWeight: '900', marginBottom: '24px', color: '#dc2626'}}>Payment Method</h2>
               <div style={{backgroundColor: '#f5f1ed', border: '2px solid #cccccc', borderRadius: '8px', padding: '20px', textAlign: 'center'}}>
-                <p style={{color: '#666666', marginBottom: '12px', fontSize: '16px'}}>💬 M-Pesa Payment</p>
+                <p style={{color: '#666666', marginBottom: '12px', fontSize: '16px'}}> M-Pesa Payment</p>
                 <p style={{color: '#dc2626', fontWeight: 'bold', fontSize: '18px'}}>Coming Soon</p>
                 <p style={{color: '#666666', marginTop: '12px', fontSize: '14px'}}>STK Push will be sent to your phone</p>
               </div>

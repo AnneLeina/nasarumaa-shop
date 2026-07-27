@@ -96,8 +96,8 @@ export default function Orderconfirmation() {
 
         <div style={{marginTop: '48px', paddingTop: '32px', borderTop: '1px solid #cccccc'}}>
           <p style={{color: '#666666', marginBottom: '8px'}}>Questions?</p>
-          <p style={{color: '#dc2626', fontWeight: 'bold'}}>📞 +254 711 410 982</p>
-          <p style={{color: '#dc2626', fontWeight: 'bold'}}>📧 annelenku@gmail.com</p>
+          <p style={{color: '#dc2626', fontWeight: 'bold'}}>+254 711 410 982, +254 712 881 998</p>
+          <p style={{color: '#dc2626', fontWeight: 'bold'}}>annelenku@gmail.com</p>
         </div>
       </div>
     </div>

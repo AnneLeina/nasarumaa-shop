@@ -35,8 +35,8 @@ export default function Navigation() {
             >
               <div style={{fontSize: '24px'}}>🌿</div>
               <div>
-                <h1 style={{fontSize: '28px', fontWeight: '900', margin: 0, color: '#000000'}}>Nasarumaa</h1>
-                <p style={{fontSize: '12px', color: '#000000', fontWeight: 'bold', margin: 0}}>Collection Attire</p>
+                <h1 style={{fontSize: '28px', fontWeight: '900', margin: 0, color: '#000000'}}>Nasarumaa Collection Attire</h1>
+                <p style={{fontSize: '12px', color: '#000000', fontWeight: 'bold', margin: 0}}>Let Us Make You Look Good</p>
               </div>
             </Link>
 
@@ -132,7 +132,7 @@ export default function Navigation() {
             <div style={{marginTop: '16px', paddingTop: '16px', borderTop: '1px solid #000000', display: 'flex', flexDirection: 'column', gap: '12px'}}>
               <Link to="/" style={{color: '#000000', textDecoration: 'none', fontWeight: 'bold', padding: '10px 12px', borderRadius: '6px', display: 'block'}} onClick={() => setIsOpen(false)} onMouseEnter={(e) => {e.target.style.backgroundColor = '#dc2626'; e.target.style.color = 'white';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#000000';}}>Home</Link>
               <Link to="/products" style={{color: '#000000', textDecoration: 'none', fontWeight: 'bold', padding: '10px 12px', borderRadius: '6px', display: 'block'}} onClick={() => setIsOpen(false)} onMouseEnter={(e) => {e.target.style.backgroundColor = '#dc2626'; e.target.style.color = 'white';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#000000';}}>Shop</Link>
-              <a href="tel:+254711410982" style={{color: '#000000', textDecoration: 'none', fontWeight: 'bold', padding: '10px 12px', borderRadius: '6px', display: 'block'}} onMouseEnter={(e) => {e.target.style.backgroundColor = '#dc2626'; e.target.style.color = 'white';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#000000';}}>Call: +254 711 410 982</a>
+              <a href="tel:+254711410982" style={{color: '#000000', textDecoration: 'none', fontWeight: 'bold', padding: '10px 12px', borderRadius: '6px', display: 'block'}} onMouseEnter={(e) => {e.target.style.backgroundColor = '#dc2626'; e.target.style.color = 'white';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#000000';}}>Call: +254 711 410 982, +254 712 881 998</a>
               <Link to="/cart" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold', padding: '10px 12px', borderRadius: '6px', backgroundColor: '#dc2626', display: 'block'}} onClick={() => setIsOpen(false)}>View Cart ({totalItems})</Link>
             </div>
           )}

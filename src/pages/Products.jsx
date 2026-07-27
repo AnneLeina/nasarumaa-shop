@@ -114,7 +114,7 @@ export default function Products() {
                 {filteredProducts.map((product) => (
                   <div key={product.id} style={{backgroundColor: '#ffffff', border: '1px solid #000000', borderRadius: '12px', overflow: 'hidden', transition: 'all 0.3s ease'}} onMouseEnter={(e) => {e.currentTarget.style.borderColor = '#dc2626'; e.currentTarget.style.transform = 'translateY(-8px)';}} onMouseLeave={(e) => {e.currentTarget.style.borderColor = '#000000'; e.currentTarget.style.transform = 'translateY(0)';}}>
                     <div style={{height: '180px', backgroundColor: '#ede8e3', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '56px', position: 'relative'}}>
-                      👗
+                      
                       {product.discount_percentage > 0 && (<div style={{position: 'absolute', top: '8px', right: '8px', backgroundColor: '#dc2626', color: 'white', padding: '6px 12px', borderRadius: '6px', fontWeight: 'bold', fontSize: '12px'}}>-{product.discount_percentage}%</div>)}
                     </div>
                     <div style={{padding: '16px'}}>
